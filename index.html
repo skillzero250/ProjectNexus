@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Игра</title>
+
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<h1>Фрукты
+</h1>
+
+<div class="fruitss">
+	<img src="plate.jpg">
+</div>
+
+<span class="fruits" >
+	<img id="apple" src="apple.png" width="50" height="50">
+	<img id="strawberry" src="strawberry.png" width="50" height="50">
+	<img id="pineapple" src="pineapple.png" width="50" height="50">
+	<img id="grape" src="grape.png" width="50" height="50">
+	<img id="mango" src="mango.png" width="50" height="50">
+	<img id="banana" src="banana.png" width="50" height="50">
+	<img id="pomegranate" src="pomegranate.png" width="50" height="50">
+	<img id="watermelon" src="watermelon.png" width="50" height="50">
+	<img id="lemon" src="lemon.png" width="50" height="50">
+	<img id="kiwi" src="kiwi.png" width="50" height="50">
+	<img id="cherry" src="cherry.png" width="50" height="50">
+	<img id="mangosteen" src="mangosteen.png" width="50" height="50">
+	<img id="dragonfruit" src="dragonfruit.png" width="50" height="50">
+	<img id="papaya" src="papaya.png" width="50" height="50">
+	<img id="avocado" src="avocado.png" width="50" height="50">
+</span>
+
+<span id="message"></span>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+"use strict";
+
+const MASSIV = [
+	"apple",
+	"strawberry",
+	"pineapple",
+	"grape",
+	"mango",
+	"banana",
+	"pomegranate",
+	"watermelon",
+	"lemon",
+	"kiwi",
+	"cherry",
+	"mangosteen",
+	"dragonfruit",
+	"papaya",
+	"avocado"
+];
+
+// https://stackoverflow.com/a/2450976
+const shuffle = array => {
+	let currentIndex = array.length, randomIndex;
+
+	// While there remain elements to shuffle.
+	while (currentIndex !== 0) {
+
+		// Pick a remaining element.
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex--;
+
+		// And swap it with the current element.
+		[array[currentIndex], array[randomIndex]] = [
+		array[randomIndex], array[currentIndex]];
+		}
+
+	return array;
+}
+
+const shuffledObjects = shuffle(MASSIV);
+let currentIndex = 0;
+
+const addEventListener = () => {
+	if (currentIndex >= shuffledObjects.length) {
+		document.getElementById("message").innerText = "Вы прошли игру!";
+		return;
+		}
+
+	document.getElementById("message").innerText = "Найди фрукт " + shuffledObjects[currentIndex];
+
+	document.getElementById(shuffledObjects[currentIndex]).addEventListener('click', function (event) {
+			event.preventDefault();
+
+			this.style.opacity = '0';
+			this.style.transition = '0.5s';
+
+			++currentIndex;
+
+			addEventListener();
+		});
+};
+
+addEventListener();
+
+</script>

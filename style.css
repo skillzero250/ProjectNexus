@@ -1,0 +1,123 @@
+.sunsistem {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#apple {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 530px 0 0 200px;
+
+}
+
+#strawberry {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 360px 0 0 550px;
+}
+
+#pineapple {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 460px 0 0 130px;
+}
+
+#grape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 560px 0 0 160px;
+}
+
+#mango {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 460px 0 0 190px;
+}
+
+#banana {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 460px 0 0 460px;
+}
+
+#pomegranate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 560px 0 0 660px;
+}
+
+#watermelon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 560px 0 0 690px;	
+}
+
+#lemon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 770px 0 0 700px;
+}
+
+#kiwi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 800px 0 0 720px;
+}
+
+#cherry {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 420px 0 0 730px;
+}
+
+#mangosteen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 330px 0 0 690px;
+}
+
+
+#dragonfruit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 230px 0 0 360px;
+}
+
+#papaya {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 800px 0 0 280px;
+}
+
+#avocado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 780px 0 0 460px;
+}
+
+#message {
+    position: absolute;
+    font-family: "Times New Roman", Times, serif;
+    background-color: black;
+    color: white;
+    font-size: 20pt;	
+    top: 0;
+    left: 0;
+    margin: 100px 0 0 320px;
+}
